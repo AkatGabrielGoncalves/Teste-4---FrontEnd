@@ -32,6 +32,10 @@ yarn build
 
 ## # **Backend**
 
+```
+cd backend
+```
+
 ### - Install dependencies
 
 ```
