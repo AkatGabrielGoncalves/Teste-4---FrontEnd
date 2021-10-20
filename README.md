@@ -1,29 +1,39 @@
 # **Teste-4---FrontEnd**
 
-## # **Frontend**
+- This project is part of a set of other tests. Check it out:
+  - [Test 1 - Web Scrapping](https://github.com/AkatGabrielGoncalves/Teste-1---WebScraping)
+  - [Test 2 - Transformação de dados](https://github.com/AkatGabrielGoncalves/Teste-2---Transformacao-de-dados)
+  - [Test 3 - Banco de dados](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados)
+
+## **What does this project do?**
+
+- Creates a web interface to communicate with the backend API which reachs out to a database that is populated with data from [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv)
+
+## **Frontend**
+
 ```
 cd frontend
 ```
 
-### - Install dependencies
+### Install dependencies
 
 ```
 yarn install
 ```
 
-### - Start local server
+### Start local server
 
 ```
 yarn serve
 ```
 
-### - Build project
+### Build project
 
 ```
 yarn build
 ```
 
-### - Frontend images
+### **Frontend images**
 
 ![No data](./assets/images/frontendimage.png)
 
@@ -43,23 +53,25 @@ yarn build
   - VUE_APP_BACKENDHOST
   - VUE_APP_BACKENDPORT
     - Remember to set up inside a .env file in the root directory of the frontend.
-## # **Backend**
+
+## **Backend**
 
 ```
 cd backend
 ```
 
-### - Install dependencies
+### Install dependencies
 
 ```
 yarn install
 ```
 
-### - Start server
+### Start server
 
 ```
 yarn start
 ```
+
 ### **What dependencies does this project use?**
 
 - Express.js
@@ -69,9 +81,12 @@ yarn start
 
 - The backend was written in plain javascript to keep it simple, it uses Express.js to create a server and the postgres driver to communicate with the database
 - The backend expects to use a database populated with the following data:
-  - http://www.ans.gov.br/externo/site_novo/informacoes_avaliacoes_oper/lista_cadop.asp
-  - You can use my repository: https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados which has a postgres script for populating the database.
-- The backend only has one route which is ```/registration?search=XXX&page=XXX&perPage=XXX```
+  - [data](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv)
+  - You can use my repository: [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados) which has a postgres script for populating the database.
+- The backend only has one route:
+  - `/registration?search=XXX&page=XXX&perPage=XXX`
+  - The response will be a object containing the rows and fields:
+    - `response: { rows[], fields[] }`
 - There are enviroment variables that are needed:
   - DBUSER
   - DBHOST
