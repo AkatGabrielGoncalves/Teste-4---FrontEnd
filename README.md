@@ -7,7 +7,7 @@
 
 ## **What does this project do?**
 
-- Creates a web interface to communicate with the backend API which reachs out to a database that is populated with data from [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv)
+- Creates a web interface to communicate with the backend API which reachs out to a database that is populated with data from [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv).
 
 ## **Frontend**
 
@@ -79,7 +79,7 @@ yarn start
 
 ### **Description**
 
-- The backend was written in plain javascript to keep it simple, it uses Express.js to create a server and the postgres driver to communicate with the database
+- The backend was written in plain javascript to keep it simple, it uses Express.js to create a server and the postgres driver to communicate with the database.
 - The backend expects to use a database populated with the following data:
   - [data](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv)
   - You can use my repository: [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados) which has a postgres script for populating the database.
