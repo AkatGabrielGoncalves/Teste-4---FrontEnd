@@ -135,7 +135,7 @@ export default Vue.extend({
           data: { rows, fields },
         }: AxiosResponse<any> = await axios({
           method: "get",
-          url: `${process.env.VUE_APP_BACKENDHOST}:${process.env.VUE_APP_BACKENDPORT}/registration?search=${this.inputValue}&page=${this.tablePage}&perPage=${this.itemsPerPage}`,
+          url: `${process.env.VUE_APP_BACKENDHOST}/registration?search=${this.inputValue}&page=${this.tablePage}&perPage=${this.itemsPerPage}`,
         });
 
         this.numberOfItemsFound = rows[0] ? Number(rows[0].count) : 0;

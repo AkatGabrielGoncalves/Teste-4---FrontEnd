@@ -49,10 +49,9 @@ yarn build
 ### **Description**
 
 - The frontend was built using Vue.js with Vuetify, written in TypeScript and to communicate with the backend was used Axios.
-- Remember to set the enviroment variables:
+- Remember to set the enviroment variable:
   - VUE_APP_BACKENDHOST
-  - VUE_APP_BACKENDPORT
-    - Remember to set up inside a .env file in the root directory of the frontend.
+    - Remember to set up inside a .env.development file in the root directory of the frontend.
 
 ## **Backend**
 
@@ -93,4 +92,4 @@ yarn start
   - DBNAME
   - DBPASSWORD
   - DBPORT
-    - Remember to set up inside a .env file in the root directory of the backend.
+    - Remember to set up inside a .env.dev file in the root directory of the backend.
