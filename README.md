@@ -5,6 +5,9 @@
   - [Test 2 - Transformação de dados](https://github.com/AkatGabrielGoncalves/Teste-2---Transformacao-de-dados)
   - [Test 3 - Banco de dados](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados)
 
+## **This project is live!**
+- The frontend is deployed to **Heroku**: https://intuitive-cadastro-op.herokuapp.com/
+- The backend was deployed to **AWS Lambda** using the serverless framework.
 ## **What does this project do?**
 
 - Creates a web interface to communicate with the backend API which reachs out to a database that is populated with data from [Test 3](https://github.com/AkatGabrielGoncalves/Teste-3---Banco-de-dados/blob/master/cadastro_op/Relatorio_cadop.csv).
