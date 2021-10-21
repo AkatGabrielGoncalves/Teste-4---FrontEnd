@@ -1,8 +1,9 @@
-const client = require('./../database')
+const client = require('../database/connect')
 
 exports.index = async (req, res) => {
   try {
     let { search, page, perPage } = req.query
+    console.log(req.query)
 
     if (!page | !perPage) {
       page = 0
@@ -31,6 +32,7 @@ exports.index = async (req, res) => {
 
     res.status(200).json({ rows, fields })
   } catch (err) {
+    res.status(400).json({ error: ['Error has ocurred'] })
     console.log('Error has occured.', err)
   }
 }

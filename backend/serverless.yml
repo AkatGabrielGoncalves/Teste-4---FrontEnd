@@ -1,0 +1,19 @@
+service: op-api
+provider:
+  runtime: nodejs14.x
+  name: aws
+  stage: prod
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+functions:
+  app:
+    handler: src/server.handler
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true
